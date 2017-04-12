@@ -2,7 +2,7 @@
 Aplikasi untuk minimarket menggunakan bahasa Java
 
 Dibuat oleh : 
-Aulia Rahman (1405550)
+<p>Aulia Rahman (1405550)</p>
 Benrigo Novan S ()
 M Rahmanda ()
 Zakki M ()
