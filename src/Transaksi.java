@@ -1,36 +1,42 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by Rahman on 4/10/2017.
  */
+//Transaksi
 public class Transaksi {
     int id;
-    int qty;
+    Customer customer;
     Barang barang;
+    int qty;
+    ArrayList<Transaksi> dbTransaksi = new ArrayList<>();
 
-    public Transaksi(int id, int qty, Barang barang) {
+    public Transaksi(int id, Customer customer, Barang barang, int qty) {
         this.id = id;
-        this.qty = qty;
+        this.customer = customer;
         this.barang = barang;
+        this.qty = qty;
     }
 
     public void print(){
-        System.out.println("Id_Transaksi : "+id);
-        System.out.println("QTY : "+qty);
-        System.out.println("Nama Barang : "+barang.nama);
-        System.out.println("Harga : "+barang.hargaJual);
+        System.out.print("Nama Barang: "+barang.nama);
+        System.out.print("| QTY: "+qty);
+        System.out.println("| Harga Barang: "+barang.hargaJual);
     }
 
-    public int hitungBarang(){
+    public int hitungHargaJual(){
         int total=0;
+        total = total + barang.hargaJual * qty;
         return total;
     }
 
     public static void main(String[] args){
-        DaftarCustomer daftarCustomer = new DaftarCustomer();
-        daftarCustomer.isiCustomer();
-        BarangPajang barangPajang = new BarangPajang();
-        barangPajang.addBarang();
-        Transaksi transaksi = new Transaksi(1,20,barangPajang.cari(1));
+        Customer rahman = new Customer(1,"Aulia Rahman","Cimohay");
+        DaftarBarang daftarBarang = new DaftarBarang();
+        daftarBarang.isi();
+        Transaksi transaksi = new Transaksi(1,rahman,daftarBarang.cariBarang(1),3);
+        transaksi.print();
+        System.out.println(transaksi.hitungHargaJual());
     }
 }

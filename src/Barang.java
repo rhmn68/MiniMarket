@@ -1,11 +1,12 @@
 /**
  * Created by Rahman on 4/5/2017.
  */
+//INISIALISASI BARANG
 public class Barang {
     int id;
     String nama;
-    int hargaJual;
-    int hargaProduksi;
+    public int hargaJual;
+    public int hargaProduksi;
 
     public Barang(int id, String nama, int hargaJual, int hargaProduksi){
         this.id = id;

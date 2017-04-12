@@ -3,6 +3,7 @@ import java.util.HashMap;
 /**
  * Created by Rahman on 4/5/2017.
  */
+//INISIALISASI CUSTOMER
 public class Customer {
     public int id;
     String nama;
@@ -16,8 +17,8 @@ public class Customer {
 
     public void print(){
         System.out.println("Id = "+id);
-        System.out.println("Nama = "+nama);
-        System.out.println("Alamat = "+alamat);
+        System.out.println("Nama Customer = "+nama);
+        System.out.println("");
     }
     public static void main(String args[]){
         Customer customer = new Customer(1,"Aulia Rahman", "Cimohay");

@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="690d2e95-0627-43f7-a4c5-81015afaf1bc" name="Default" comment="Add Transaksi">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MiniMarket/BarangPajang.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MiniMarket/DaftarCustomer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MiniMarket/MemberCustomer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/BarangPajang.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DaftarCustomer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MemberCustomer.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MiniMarket/Barang.class" afterPath="$PROJECT_DIR$/out/production/MiniMarket/Barang.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MiniMarket/Customer.class" afterPath="$PROJECT_DIR$/out/production/MiniMarket/Customer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MiniMarket/DaftarBarang.class" afterPath="$PROJECT_DIR$/out/production/MiniMarket/DaftarBarang.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MiniMarket/MainMenu.class" afterPath="$PROJECT_DIR$/out/production/MiniMarket/MainMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MiniMarket/Transaksi.class" afterPath="$PROJECT_DIR$/out/production/MiniMarket/Transaksi.class" />
+    <list default="true" id="690d2e95-0627-43f7-a4c5-81015afaf1bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="90bb1690-b3af-4b9e-b712-d3a9e4170d93" name="Rejected commit: Default" comment="Add Transaksi">
@@ -61,8 +50,8 @@
       <file leaf-file-name="Barang.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Barang.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -689,12 +678,20 @@
       <workItem from="1491887187595" duration="1053000" />
       <workItem from="1491902493120" duration="20062000" />
       <workItem from="1491971517390" duration="10673000" />
-      <workItem from="1492010011507" duration="235000" />
+      <workItem from="1492010011507" duration="295000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Transaksi">
+      <created>1492010271983</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492010271983</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41376000" />
+    <option name="totallyTimeSpent" value="41436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1023,8 +1020,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Barang.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
       </provider>
