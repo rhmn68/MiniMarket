@@ -10,14 +10,14 @@ public class BarangPajang {
         ArrBarang.put(brg.id,brg);
     }
 
-    public void addBarang(){
-        addBarang(new Barang(1, "Tisu",20,15));
-        addBarang(new Barang(2, "Kawat",50,40));
-        addBarang(new Barang(3, "Tembaga",100,90));
-    }
-
     public Barang cari(int brgId){
         return ArrBarang.get(brgId);
+    }
+
+    public void addBarang(){
+        Barang barang;
+        barang = new Barang(1,"Tisu",50,20);addBarang(barang);
+        barang = new Barang(2,"Tisu",50,20);addBarang(barang);
     }
 
     public void print(){
@@ -31,9 +31,9 @@ public class BarangPajang {
     }
 
     public static void main(String[] args){
-        HashMap<Integer,Barang> ArrBarang = new HashMap<>(); //Menambah Barang ke ArrBarang
         BarangPajang brgPajang = new BarangPajang();
         brgPajang.addBarang();
-        brgPajang.print();
+        Barang brg = brgPajang.cari(2);
+        brg.print();
     }
 }

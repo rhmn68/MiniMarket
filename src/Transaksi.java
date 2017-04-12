@@ -1,40 +1,36 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Created by Rahman on 4/10/2017.
  */
 public class Transaksi {
     int id;
-    private ArrayList<Barang> dbBarang = new ArrayList<>();
-    BarangPajang brgPajang;
+    int qty;
+    Barang barang;
 
-    public Transaksi(int id, BarangPajang brgPajang){
+    public Transaksi(int id, int qty, Barang barang) {
         this.id = id;
-        this.brgPajang = brgPajang;
-    }
-
-    public void addTransaksi(int idBrg){
-        Barang brg = brgPajang.cari(idBrg);
-        if (brg!=null){
-            dbBarang.add(brg);
-        }
+        this.qty = qty;
+        this.barang = barang;
     }
 
     public void print(){
         System.out.println("Id_Transaksi : "+id);
-        for (Barang brg:dbBarang){
-            brg.print();
-        }
+        System.out.println("QTY : "+qty);
+        System.out.println("Nama Barang : "+barang.nama);
+        System.out.println("Harga : "+barang.hargaJual);
+    }
+
+    public int hitungBarang(){
+        int total=0;
+        return total;
     }
 
     public static void main(String[] args){
-        BarangPajang brgPajang = new BarangPajang();
-        brgPajang.addBarang();
-
-        Transaksi T = new Transaksi(1,brgPajang);
-        T.addTransaksi(1);
-        T.addTransaksi(2);
-        T.print();
+        DaftarCustomer daftarCustomer = new DaftarCustomer();
+        daftarCustomer.isiCustomer();
+        BarangPajang barangPajang = new BarangPajang();
+        barangPajang.addBarang();
+        Transaksi transaksi = new Transaksi(1,20,barangPajang.cari(1));
     }
 }
