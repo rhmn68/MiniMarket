@@ -17,7 +17,6 @@ public abstract class Pegawai {
         this.tunjangan = tunjangan;
     }
 
-
     public double hitungGaji(){
         return 0;
     }
