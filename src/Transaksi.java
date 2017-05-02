@@ -25,15 +25,15 @@ public class Transaksi {
         System.out.println("| Harga Barang: "+barang.hargaJual);
     }
 
-    public int hitungHargaJual(){
-        int total=0;
+    public long hitungHargaJual(){
+        long total=0;
         total = total + barang.hargaJual * qty;
         return total;
     }
 
     public static void main(String[] args){
         Customer rahman = new Customer(1,"Aulia Rahman","Cimohay");
-        DaftarBarang daftarBarang = new DaftarBarang();
+        BarangPajang daftarBarang = new BarangPajang();
         daftarBarang.isi();
         Transaksi transaksi = new Transaksi(1,rahman,daftarBarang.cariBarang(1),3);
         transaksi.print();

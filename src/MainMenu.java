@@ -19,8 +19,8 @@ public class MainMenu {
         }
     }
 
-    public int hitungHargaJual(){
-        int total=0;
+    public long hitungHargaJual(){
+        long total=0;
         for (Transaksi transaksi:dbTransaksi){
             total = total + transaksi.hitungHargaJual();
         }
@@ -28,7 +28,7 @@ public class MainMenu {
     }
 
     public static void main(String[] args){
-       DaftarBarang daftarBarang = new DaftarBarang();
+       BarangPajang daftarBarang = new BarangPajang();
        daftarBarang.isi();
 
        Customer aulia = new Customer(1,"Aulia Rahman","Cimahi");
