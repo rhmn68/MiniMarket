@@ -4,24 +4,24 @@ import java.util.HashMap;
  * Created by Rahman on 4/5/2017.
  */
 //INISIALISASI CUSTOMER
-public class Customer {
-    public int id;
+public abstract class Customer {
+    int id;
     String nama;
     String alamat;
+    boolean diskon;
 
-    public  Customer(int id, String nama, String alamat){
+    public Customer(int id, String nama, String alamat, boolean diskon){
         this.id = id;
         this.nama = nama;
         this.alamat = alamat;
+        this.diskon = diskon;
     }
 
     public void print(){
-        System.out.println("Id = "+id);
-        System.out.println("Nama Customer = "+nama);
-        System.out.println("");
-    }
-    public static void main(String args[]){
-        Customer customer = new Customer(1,"Aulia Rahman", "Cimohay");
-        customer.print();
+        System.out.println("id : "+id);
+        System.out.println("nama : "+nama);
+        System.out.println("alamat : "+alamat);
+        System.out.println("diskon : "+diskon);
+
     }
 }
