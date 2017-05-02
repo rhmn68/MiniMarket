@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -14,10 +15,10 @@ public class BarangPajang {
         return ArrBarang.get(brgId);
     }
 
-    public void addBarang(){
+    public void isiBarang(){
         Barang barang;
-        barang = new Barang(1,"Tisu",4500,4000, 100);addBarang(barang);
-        barang = new Barang(2,"Sabun",3500,2900, 100);addBarang(barang);
+        barang = new Barang(1,"Tisu",4500,4000);addBarang(barang);
+        barang = new Barang(2,"Sabun",3500,2900);addBarang(barang);
     }
 
     public void print(){
@@ -29,15 +30,15 @@ public class BarangPajang {
 
     public void isi(){
         Barang barang;
-        barang = new Barang(1,"Tisu",5000,4500, 100);addBarang(barang);
-        barang = new Barang(2,"Kawat",10000,9000,100);addBarang(barang);
-        barang = new Barang(3,"Tembaga",6000,5000,100);addBarang(barang);
-        barang = new Barang(4,"Solar",20000,15000,100);addBarang(barang);
+        barang = new Barang(1,"Tisu",5000,4500);addBarang(barang);
+        barang = new Barang(2,"Kawat",10000,9000);addBarang(barang);
+        barang = new Barang(3,"Tembaga",6000,5000);addBarang(barang);
+        barang = new Barang(4,"Solar",20000,15000);addBarang(barang);
     }
 
     public static void main(String[] args){
         BarangPajang brgPajang = new BarangPajang();
-        brgPajang.addBarang();
+        brgPajang.isiBarang();
         brgPajang.print();
         Barang brg = brgPajang.cariBarang(2);
 
