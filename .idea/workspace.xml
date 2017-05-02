@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="690d2e95-0627-43f7-a4c5-81015afaf1bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Pegawai.java" afterPath="$PROJECT_DIR$/src/Pegawai.java" />
-    </list>
+    <list default="true" id="690d2e95-0627-43f7-a4c5-81015afaf1bc" name="Default" comment="" />
     <list id="90bb1690-b3af-4b9e-b712-d3a9e4170d93" name="Rejected commit: Default" comment="Add Transaksi" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pegawai.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pegawai.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Pegawai.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -101,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DaftarBarang.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DaftarBarang.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DaftarBarang.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="189">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -731,7 +728,7 @@
       <workItem from="1491971517390" duration="10673000" />
       <workItem from="1492010011507" duration="295000" />
       <workItem from="1493705710164" duration="4039000" />
-      <workItem from="1493711350511" duration="576000" />
+      <workItem from="1493711350511" duration="1684000" />
     </task>
     <task id="LOCAL-00001" summary="Add Transaksi">
       <created>1492010271983</created>
@@ -744,7 +741,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46051000" />
+    <option name="totallyTimeSpent" value="47159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
@@ -1059,14 +1056,6 @@
     <entry file="file://$PROJECT_DIR$/src/DaftarCustomer.java" />
     <entry file="file://$PROJECT_DIR$/src/BarangPajang.java" />
     <entry file="file://$PROJECT_DIR$/src/MemberCustomer.java" />
-    <entry file="file://$PROJECT_DIR$/src/DaftarBarang.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Transaksi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1135,6 +1124,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DaftarBarang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding />
         </state>
       </provider>
