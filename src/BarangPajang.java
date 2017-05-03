@@ -17,30 +17,30 @@ public class BarangPajang {
 
     public void isiBarang(){
         Barang barang;
-        barang = new Barang(1,"Tisu",4500,4000);addBarang(barang);
-        barang = new Barang(2,"Sabun",3500,2900);addBarang(barang);
-    }
-
-    public void print(){
-        for (Barang brg:ArrBarang.values()){
-            System.out.println("Nama Barang : "+brg.nama);
-            System.out.println("Harga Jual  : "+brg.hargaJual);
-        }
-    }
-
-    public void isi(){
-        Barang barang;
         barang = new Barang(1,"Tisu",5000,4500);addBarang(barang);
         barang = new Barang(2,"Kawat",10000,9000);addBarang(barang);
         barang = new Barang(3,"Tembaga",6000,5000);addBarang(barang);
         barang = new Barang(4,"Solar",20000,15000);addBarang(barang);
     }
 
+    public void print(){
+        System.out.println("==================================");
+        System.out.println("          DAFTAR BARANG");
+        System.out.println("==================================");
+        System.out.println("Id  Nama Barang            Harga");
+        for (Barang brg:ArrBarang.values()){
+            System.out.printf("%d",brg.id);
+            System.out.printf("%10s",brg.nama);
+            System.out.printf("%20d\n",brg.hargaJual);
+        }
+        System.out.println("==================================");
+    }
+
     public static void main(String[] args){
         BarangPajang brgPajang = new BarangPajang();
         brgPajang.isiBarang();
-        brgPajang.print();
         Barang brg = brgPajang.cariBarang(2);
-
+        brg.print();
+//        brgPajang.print();
     }
 }

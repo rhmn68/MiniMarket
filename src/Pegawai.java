@@ -17,6 +17,10 @@ public abstract class Pegawai {
         this.tunjangan = tunjangan;
     }
 
+    public void print(){
+        System.out.println("Nama : "+nama);
+    }
+
     public double hitungGaji(){
         return 0;
     }

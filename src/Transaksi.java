@@ -1,3 +1,5 @@
+import com.sun.org.apache.bcel.internal.generic.GOTO;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -7,36 +9,101 @@ import java.util.HashMap;
 //Transaksi
 public class Transaksi {
     int id;
-    Customer customer;
+    Kasir kasir;
     Barang barang;
-    int qty;
-    ArrayList<Transaksi> dbTransaksi = new ArrayList<>();
+    Customer customer;
+    ArrayList<Cart> dbCart = new ArrayList<>();
 
-    public Transaksi(int id, Customer customer, Barang barang, int qty) {
-        this.id = id;
+    public void setCustomer(Customer customer) {
         this.customer = customer;
-        this.barang = barang;
-        this.qty = qty;
     }
 
-    public void print(){
-        System.out.print("Nama Barang: "+barang.nama);
-        System.out.print("| QTY: "+qty);
-        System.out.println("| Harga Barang: "+barang.hargaJual);
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public long hitungHargaJual(){
-        long total=0;
-        total = total + barang.hargaJual * qty;
+    public void addCart(Cart cart){
+        BarangPajang barangPajang = new BarangPajang();
+        if (barangPajang!=null){
+            dbCart.add(cart);
+        }
+    }
+
+    public double hitungBarang(){
+        double total = 0;
+        for (Cart cart:dbCart){
+            total = cart.qty * cart.barang.hargaJual;
+        }
         return total;
     }
 
+    public double hitungTotal(){
+        double total = 0;
+        for (Cart cart:dbCart){
+            total = total + cart.hitung();
+        }
+        return total;
+    }
+
+    public double hitungTagihan(){
+        double total = 1;
+        double diskon = 1;
+        if (getCustomer().diskon == true){
+            diskon = hitungTotal() * 0.15;
+            total = hitungTotal() - diskon;
+        }else {
+            total = hitungTotal();
+        }
+        return total;
+    }
+
+    public int hitungItem(){
+        int jml;
+        return jml=dbCart.size();
+    }
+
+    public void struk(){
+        //Memanggil Isi Pegawai
+        Report r = new Report();
+        r.isiPegawai();
+        //Menggunakan array dimulai dari 0
+        Pegawai p = r.cariPegawai(0);
+
+        //Cetak
+        System.out.println("=============================");
+        System.out.println("     Toko Guna Berjaya    ");
+        System.out.println("Setiabudhi Bandung Jawa Barat");
+        System.out.println("=============================");
+        for (Cart cart:dbCart){
+            System.out.print(cart.barang.nama);
+            System.out.print("    "+cart.barang.hargaJual);
+            System.out.println("    "+cart.qty);
+        }
+        System.out.println("-----------------------------");
+        System.out.println("Total Item      : "+hitungItem());
+        if (getCustomer().diskon == true){
+            System.out.println("Diskon          : 15%");
+        }else {
+            System.out.println("Diskon        : 0");
+        }
+        System.out.println("Total Harga     : "+hitungTagihan());
+        System.out.println("-----------------------------");
+        System.out.println("Kasir     :  "+p.nama);
+        System.out.println("=============================");
+    }
+
     public static void main(String[] args){
-        Customer rahman = new Customer(1,"Aulia Rahman","Cimohay");
-        BarangPajang daftarBarang = new BarangPajang();
-        daftarBarang.isi();
-        Transaksi transaksi = new Transaksi(1,rahman,daftarBarang.cariBarang(1),3);
-        transaksi.print();
-        System.out.println(transaksi.hitungHargaJual());
+        //Inisialisasi
+        Transaksi transaksi = new Transaksi();
+        BarangPajang barangPajang = new BarangPajang();
+        //Memanggil isi Barang
+        barangPajang.isiBarang();
+        //Menambahkan customer
+        RegCustomer rahman = new RegCustomer(1,"Rahman","Cimahi", false);transaksi.setCustomer(rahman);
+        //Menambahkan barang di cart
+        Cart cart1 = new Cart(1,2,barangPajang.cariBarang(1));transaksi.addCart(cart1);
+        Cart cart2 = new Cart(2,3,barangPajang.cariBarang(3));transaksi.addCart(cart2);
+        //Print
+        transaksi.struk();
     }
 }

@@ -1,7 +1,5 @@
-import java.util.HashMap;
-
 /**
- * Created by Rahman on 4/5/2017.
+ * Created by Zakki Mudhoffar on 5/2/2017.
  */
 //INISIALISASI CUSTOMER
 public abstract class Customer {
